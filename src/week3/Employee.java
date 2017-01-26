@@ -13,7 +13,7 @@ import java.time.Period;
  *
  * @author Lucas
  */
-public class Employee {
+public abstract class Employee {
     private String fName;   
     private String lName; 
     private int socialInsuranceNumber;
@@ -93,7 +93,11 @@ public class Employee {
         return fName + ""+ lName;
     }
     
-
+        
+    public abstract PayCheque getPayCheque();
+    
+        
+    
     
      
      
